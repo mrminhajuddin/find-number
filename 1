@@ -1,0 +1,9 @@
+numbers = [10, 45, 2, 99, 23, 67]
+
+numbers = list(set(numbers))  # remove duplicates
+numbers.sort(reverse=True)
+
+if len(numbers) >= 3:
+    print("3rd largest number:", numbers[2])
+else:
+    print("Not enough elements")
