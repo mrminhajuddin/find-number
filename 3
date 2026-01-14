@@ -1,0 +1,9 @@
+nums = [10, 4, 3, 50, 23, 90]
+
+unique_nums = list(set(nums))
+unique_nums.sort(reverse=True)
+
+if len(unique_nums) >= 3:
+    print("3rd largest number:", unique_nums[2])
+else:
+    print("Not enough unique elements")
